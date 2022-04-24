@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navbar } from './components'
 import { About, Header, Skills, Testimonial, Work, Footer } from './containers'
+import './App.scss'
 
 const App = () => {
   return (
