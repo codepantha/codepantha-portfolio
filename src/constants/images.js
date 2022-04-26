@@ -34,6 +34,7 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import promise from '../assets/promise.png';
 
 const images = {
   email,
@@ -62,6 +63,7 @@ const images = {
   me,
   circle,
   logo,
+  promise,
   adidas,
   amazon,
   asus,
