@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { urlFor, client } from '../../client';
 import './About.scss';
+import { AppWrap } from '../../wrapper';
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -40,4 +41,5 @@ const About = () => {
   );
 };
 
-export default About;
+// wrap About in AppWrap - a HigherOrderComponent
+export default AppWrap(About, 'about');
