@@ -20,6 +20,21 @@ const Work = () => {
     });
   }, []);
 
+  useEffect(() => {
+    setAnimateCard({ y: 100, opacity: 0 });
+
+    setTimeout(() => {
+      setAnimateCard({ y: 0, opacity: 1 });
+
+      if (activeFilter === 'All') return setFilteredWorks(works)
+      
+      setFilteredWorks(works.filter(work => work.tags.includes(activeFilter)))
+    }, 500);
+
+  }, [activeFilter]);
+
+  const handleWorkFilter = (item) => setActiveFilter(item);
+
   return (
     <section>
       <h2 className="head-text">
@@ -27,7 +42,7 @@ const Work = () => {
       </h2>
 
       <ul className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+        {['UI/UX', 'Web App', 'Mobile App', 'React', 'All'].map((item, index) => (
           <li
             className={`app__work-filter-item app__flex ${
               activeFilter === item ? 'item-active' : ''
