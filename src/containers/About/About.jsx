@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { urlFor, client } from '../../client';
 import './About.scss';
 import { AppWrap } from '../../wrapper';
+import MotionWrap from '../../wrapper/MotionWrap';
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -41,5 +42,10 @@ const About = () => {
   );
 };
 
-// wrap About in AppWrap - a HigherOrderComponent
-export default AppWrap(About, 'about');
+// wrap About in MotionWrap - a HigherOrderComponent
+// wrap that in AppWrap - another HigherOrderComponent
+export default AppWrap(
+  MotionWrap(About, 'app__about'),
+  'about',
+  'app__whitebg'
+);
