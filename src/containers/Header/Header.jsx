@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <section className="app__header app__flex">
       <motion.div
-        animate={{ x: [-100, 0], opacity: [0, 1] }}
+        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
         className="app__header-info"
       >
@@ -47,7 +47,7 @@ const Header = () => {
       >
         <img src={images.me} alt="profile_bg" />
         <motion.img
-          animate={{ scale: [0, 1] }}
+          whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: 'easeInOut' }}
           src={images.circle}
           alt="profile_circle"
@@ -57,7 +57,7 @@ const Header = () => {
 
       <motion.div
         variants={scaleVariants}
-        animate={scaleVariants.whileInView}
+        whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
         {[images.javascript, images.react, images.redux ].map((circle, index) => (
