@@ -75,6 +75,7 @@ const Footer = () => {
                 name="username"
                 value={username}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="app__flex">
@@ -85,6 +86,7 @@ const Footer = () => {
                 name="email"
                 value={email}
                 onChange={handleChange}
+                required
               />
             </div>
             <div>
@@ -94,6 +96,7 @@ const Footer = () => {
                 placeholder="Your Message"
                 value={message}
                 onChange={handleChange}
+                required
               />
             </div>
             <button type="submit" className="p-text">
