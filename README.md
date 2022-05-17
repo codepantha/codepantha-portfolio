@@ -35,9 +35,9 @@ Codepantha-portfolio is built with React and Sanity.io, and shows my projects an
 ## Authors
 👤 **Eze Promise**
 
-- GitHub: [@Eze Promisie](https://github.com/codepantha)
-- Twitter: [@Eze Promisie](https://twitter.com/codepantha)
-- LinkedIn: [Eze Promisie](https://www.linkedin.com/in/promise-eze/)
+- GitHub: [@codepantha](https://github.com/codepantha)
+- Twitter: [@codepantha](https://twitter.com/codepantha)
+- LinkedIn: [Eze Promise](https://www.linkedin.com/in/promise-eze/)
 
 ## Getting Started
 
