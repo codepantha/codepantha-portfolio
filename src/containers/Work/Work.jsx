@@ -33,8 +33,6 @@ const Work = () => {
     }, 500);
   };
 
-  // const handleWorkFilter = (item) => setActiveFilter(item);
-
   return (
     <section>
       <h2 className="head-text">
@@ -42,7 +40,7 @@ const Work = () => {
       </h2>
 
       <ul className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React', 'All'].map(
+        {['React', 'Ruby on Rails', 'All'].map(
           (item, index) => (
             <li
               className={`app__work-filter-item app__flex ${
