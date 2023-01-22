@@ -40,7 +40,7 @@ const Work = () => {
       </h2>
 
       <ul className="app__work-filter">
-        {['React', 'Ruby on Rails', 'All'].map(
+        {['React', 'Next.js', 'Ruby on Rails', 'All'].map(
           (item, index) => (
             <li
               className={`app__work-filter-item app__flex ${
